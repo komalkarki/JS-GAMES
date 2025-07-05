@@ -1,0 +1,167 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0e2c;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Screen Styles */
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Typography */
+h1, h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #f72585, #7209b7, #4cc9f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+/* Buttons */
+button {
+    background-color: #b5179e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #b5179e;
+}
+
+button:focus {
+    outline: 2px solid #4cc9f0;
+    outline-offset: 2px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Chaotic Button */
+#chaotic-button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px #b5179e;
+    transition: left 0.3s ease, top 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#chaotic-button:hover {
+    box-shadow: 0 0 20px #b5179e;
+}
+
+/* Game Screen Elements */
+#game-screen {
+    display: none;
+}
+
+#timer, #score {
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#timer {
+    top: 10px;
+    left: 10px;
+}
+
+#score {
+    top: 10px;
+    right: 10px;
+}
+
+#trash-talk {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#trash-talk.show {
+    opacity: 1;
+}
+
+/* Game Over Screen */
+#final-score, #roast-message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    #chaotic-button {
+        width: 80px;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+
+    #timer, #score {
+        font-size: 1.2rem;
+    }
+
+    #trash-talk {
+        font-size: 1rem;
+    }
+
+    #final-score, #roast-message {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    #chaotic-button {
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Thief - Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Color Thief</h1>
+        <div id="round">Round: 1/5</div>
+        <div id="target-color"></div>
+        <div id="guess-area" style="display: none;">
+            <input type="range" id="red" min="0" max="255">
+            <input type="range" id="green" min="0" max="255">
+            <input type="range" id="blue" min="0" max="255">
+            <div id="guess-color"></div>
+            <button id="submit-guess">Submit Guess</button>
+        </div>
+        <button id="start-button">Start Game</button>
+        <div id="game-over" style="display: none;">
+            <h2>Game Over</h2>
+            <p id="final-score"></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaotic Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home-screen" class="screen">
+        <h1>CHAOTIC CLICKER</h1>
+        <button id="start-button">Start Game</button>
+    </div>
+    <div id="game-screen" class="screen" style="display: none;">
+        <div id="timer">30</div>
+        <div id="score">0</div>
+        <button id="chaotic-button" aria-label="Click me to score">Click Me</button>
+        <div id="trash-talk"></div>
+    </div>
+    <div id="game-over-screen" class="screen" style="display: none;">
+        <h2>Game Over</h2>
+        <p id="final-score"></p>
+        <p id="roast-message"></p>
+        <button id="play-again-button">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
